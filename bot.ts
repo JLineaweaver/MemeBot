@@ -51,7 +51,7 @@ bot.on('message', message => {
     message.channel.sendMessage('lmao');
   }
 
-  if (message.content.toLowerCase() === 'roll') {
+  if (message.content.toLowerCase() === 'roll' || message.content.toLowerCase() === 'Roll') {
   var num = Math.floor(Math.random() * 100) + 1;
     message.channel.sendMessage(message.author + ' Roll: '+num);
   }
